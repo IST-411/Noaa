@@ -3,15 +3,15 @@ package noaaproject;
 
 
 public class Metadata {
-    private ResultSet resultSet;
-
+    private ResultSet resultset;
+    
 
     public ResultSet getResultSet() {
-        return resultSet;
+        return resultset;
     }
 
     public void setResultSet(ResultSet resultSet) {
-        this.resultSet = resultSet;
+        this.resultset = resultSet;
     }
     
 }

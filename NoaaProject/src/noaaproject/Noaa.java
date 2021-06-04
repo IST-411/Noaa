@@ -30,11 +30,10 @@ public class Noaa {
             BufferedReader br = new BufferedReader(
                     new InputStreamReader(connection.getInputStream()));
             response = br.readLine();
-//            System.out.println(response + "\n");
+//           System.out.println(response + "\n");
             NoaaData noaa = gson.fromJson(response, NoaaData.class);
             
             //Result Set output -- needs data....not sure how to load
-            
             System.out.println("Result Set");
             System.out.println("----------");
             System.out.printf("%-15s%s\n", "Offset", noaa.getMetadata().getResultSet().getOffset());

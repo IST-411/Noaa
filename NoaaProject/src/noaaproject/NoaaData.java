@@ -5,7 +5,7 @@ package noaaproject;
 public class NoaaData {
         private Metadata metadata;
         private Results results[];
-        
+                
     public Metadata getMetadata(){
         return metadata;
     }
