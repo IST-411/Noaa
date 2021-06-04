@@ -32,14 +32,13 @@ public class Noaa {
             response = br.readLine();
 //            System.out.println(response + "\n");
             NoaaData noaa = gson.fromJson(response, NoaaData.class);
-            ResultSet resSet = gson.fromJson(response, ResultSet.class);
             
             //Result Set -- needs data
             System.out.println("Result Set");
             System.out.println("----------");
-            System.out.printf("%-15s%s\n", "Offset", resSet.getOffset());
-            System.out.printf("%-15s%s\n", "Count", resSet.getCount());
-            System.out.printf("%-15s%s\n", "Limit", resSet.getLimit());
+            System.out.printf("%-15s%s\n", "Offset", noaa.getMetadata().getResultSet().getOffset());
+            System.out.printf("%-15s%s\n", "Count", noaa.getMetadata().getResultSet().getCount());
+            System.out.printf("%-15s%s\n", "Limit", noaa.getMetadata().getResultSet().getCount());
             System.out.println();
             
             //Results
