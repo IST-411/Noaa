@@ -8,7 +8,6 @@ public class ResultSet {
     private int limit;
     
 
-
     public int getOffset() {
         return offset;
     }
